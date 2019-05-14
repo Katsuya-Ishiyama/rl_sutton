@@ -26,3 +26,11 @@ class NArmedBanditEnvironment(arm: Int) {
     reward
   }
 }
+
+case class Log(playCount          : Int,
+               arm                : Int,
+               reward             : Double,
+               exploratoryRate    : Double,
+               mostSuitableAction : Int
+              )
+
